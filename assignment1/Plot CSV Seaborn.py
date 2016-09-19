@@ -13,12 +13,12 @@ import seaborn as sns
 
 # In[3]:
 
-data = pd.read_csv("data.csv")
+data = pd.read_csv("q1_data.csv")
 
 
 # In[4]:
 
-features_to_plot = ['x','y', 'c']
+features_to_plot = ['x','y']
 
 
 # In[5]:
@@ -33,13 +33,13 @@ df_to_plot
 
 # In[7]:
 
-get_ipython().magic(u'matplotlib qt')
+get_ipython().magic(u'matplotlib')
 
 
 # In[8]:
 
 sns.pairplot(df_to_plot, hue="c")
-plt.show(block=True)
+plt.show(block = True)
 
 # In[ ]:
 
